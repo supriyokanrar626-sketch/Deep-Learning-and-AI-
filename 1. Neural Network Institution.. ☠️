@@ -204,3 +204,13 @@ print("Bias:", bias)
 print("Neuron output:", output)
 
 ##########################
+
+Neurons - MCQ
+In a neuron, weights represent:
+ANSWER = How important each input is...
+Each weight in a neuron determines the influence or importance of its corresponding input.
+A higher weight means that input has a stronger effect on the neuron’s output, while a lower (or negative) weight means it contributes less or inversely.
+In short — weights help the neuron learn which inputs matter more during training
+
+########################
+
