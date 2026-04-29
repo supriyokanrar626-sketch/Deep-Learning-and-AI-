@@ -485,3 +485,18 @@ output = np.dot(np.array([ hidden_output ]), weights_output) + bias_output
 print("Final Output (Buy Probability):", round(output, 2))
 
 ##########################3
+
+Identifying Layers in a Network
+A neural network is used to predict house prices from three input features.
+It contains one hidden layer with 4 neurons. Each hidden neuron applies:
+
+weighted sum of inputs
+a bias
+an activation function
+Question What is the primary purpose of the hidden layer in this neural network?
+
+ANSWER = To learn intermediate patterns or feature combinations from the input data.
+The real purpose of a hidden layer is to learn patterns, combinations, or relationships between the input features.
+Example: It may learn relationships like “big houses in good locations are more expensive.”
+
+################################
