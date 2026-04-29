@@ -252,3 +252,14 @@ Anser = A single neuron can only make simple linear decisions. Many neurons work
 
 ###########################
 
+Neural Network - MCQ
+The hidden layers in a neural network:..
+
+Answer =  Learn complex patterns from data..
+Explanation:
+Hidden layers are the processing units of a neural network.
+They take the input data and, through multiple neurons and weights, extract deeper and
+more abstract features (like shapes, edges, or meanings) that help the network make accurate predictions.
+
+########################
+
