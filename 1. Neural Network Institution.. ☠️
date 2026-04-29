@@ -274,6 +274,7 @@ Weight 1: 0.5
 Input 2: -2
 Weight 2: 0.1
 Bias: 1
+what is the output of the neuron?
 
 Answer = 2.3
 First, Multiply each input by its corresponding weight and sum the results:
@@ -284,4 +285,257 @@ Then add the bias:
 
 ############################
 
-what is the output of the neuron?
+Layers
+Earlier, you learned how a single neuron works:
+
+y
+=
+f
+(
+w
+1
+x
+1
++
+w
+2
+x
+2
++
+w
+3
+x
+3
++
+⋯
++
+b
+)
+y=f(w 
+1
+​
+ x 
+1
+​
+ +w 
+2
+​
+ x 
+2
+​
+ +w 
+3
+​
+ x 
+3
+​
+ +⋯+b)
+x → input features
+w → weights (importance of inputs)
+b → bias (shifts output regardless of inputs)
+Note: f(⋅) is the activation function, which introduces non-linearity by transforming the weighted sum into a meaningful signal the network can learn from.
+A neural network simply stacks many of these neurons together, arranging them into layers so they can learn richer patterns. It combines many small, simple units (neurons) to build something powerful.
+
+image
+1. Input Layer
+This is the first layer, the place where data enters the network. Each neuron in the input layer corresponds to one feature of your dataset.
+
+Example: If your input data has 5 features, the input layer has 5 neurons
+
+x
+1
+,
+  
+x
+2
+,
+  
+x
+3
+,
+  
+…
+x
+5
+  
+x 
+1
+​
+ ,x 
+2
+​
+ ,x 
+3
+​
+ ,…x 
+5
+​
+ 
+x → input features
+2. Hidden Layer
+Each hidden neuron takes inputs from the previous layer:
+
+h
+1
+=
+f
+(
+w
+11
+x
+1
++
+w
+21
+x
+2
++
+w
+31
+x
+3
++
+⋯
++
+b
+1
+)
+h 
+1
+​
+ =f(w 
+11
+​
+ x 
+1
+​
+ +w 
+21
+​
+ x 
+2
+​
+ +w 
+31
+​
+ x 
+3
+​
+ +⋯+b 
+1
+​
+ )
+h
+2
+=
+f
+(
+w
+12
+x
+1
++
+w
+22
+x
+2
++
+w
+32
+x
+3
++
+⋯
++
+b
+2
+)
+h 
+2
+​
+ =f(w 
+12
+​
+ x 
+1
+​
+ +w 
+22
+​
+ x 
+2
+​
+ +w 
+32
+​
+ x 
+3
+​
+ +⋯+b 
+2
+​
+ )
+x → input features
+w → weights (importance of inputs)
+b → bias (shifts output regardless of inputs)
+h → hidden neuron outputs (learned features)
+These layers:
+
+combine inputs in different ways
+learn patterns
+transform simple features into more meaningful representations
+A network may have one hidden layer or many. Deeper networks can learn more complex patterns. Each neuron in a hidden layer typically receives input from all neurons in the previous layer.
+
+3. Output Layer
+
+y
+=
+f
+(
+w
+1
+h
+1
++
+w
+2
+h
+2
++
+w
+3
+h
+3
++
+⋯
++
+b
+)
+y=f(w 
+1
+​
+ h 
+1
+​
+ +w 
+2
+​
+ h 
+2
+​
+ +w 
+3
+​
+ h 
+3
+​
+ +⋯+b)
+w → weights (importance of inputs)
+b → bias (shifts output regardless of inputs)
+h → hidden neuron outputs (learned features)
+This layer produces the final prediction, such as:
+
+binary output (0 or 1)
+continuous value (regression)
+multiple categories (multiclass)
+Layers stack these computations to learn complex patterns.
