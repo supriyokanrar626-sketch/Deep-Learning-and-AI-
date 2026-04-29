@@ -102,3 +102,24 @@ This value (106) passed forward, and many such neurons working together combine 
 
 #############################3
 
+Neuron with Multiple Inputs
+Okay, let's get our hands dirty and see a neuron in action with some Python code!
+
+Remember, a neuron takes multiple inputs, processes them, and produces a single output. For this example, we'll simulate a neuron that receives three inputs, multiplies each input by a corresponding weight, sums the weighted inputs, and then adds a bias. This sum will be the neuron’s output.
+
+Here's the breakdown of what we're going to do:
+
+Define Inputs: We'll start by defining three input values. These could be anything – sensor readings, pixel values, or the outputs from other neurons. Let's say our inputs are 1, 2, and 3.
+Define Weights: Each input has an associated weight. Weights determine the importance of each input. Let's assign weights of 0.5, 0.3, and 0.1 to our inputs, respectively.
+Define Bias: A bias is a constant value added to the weighted sum. It helps the neuron to activate even when all inputs are zero. Let's set the bias to 0.2.
+Calculate Weighted Sum: Multiply each input by its corresponding weight and then sum the results.
+Add Bias: Add the bias to the weighted sum.
+Output: The result after adding the bias is the neuron's output.
+Note: Deep Learning doesn’t work with images, text, or sound directly, it first converts everything into numbers. Neurons can only understand numbers, so we practice with simple numeric examples. During training, the model learns the right weights and bias automatically by adjusting these numbers to reduce errors.
+
+Expected Output :
+Inputs: [1 2 3]
+Weights: [0.5 0.3 0.1]
+Bias: 0.2
+Neuron output: 1.6
+
