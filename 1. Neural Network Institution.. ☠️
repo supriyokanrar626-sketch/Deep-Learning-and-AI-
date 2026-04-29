@@ -384,3 +384,13 @@ Why Layers Matter
 The number of layers and the number of neurons in each layer are hyperparameters, design choices you can adjust to improve performance.
 
 A well-designed architecture often determines how effectively the model learns.
+
+
+##########################
+
+Architecture - Short Answer
+Explain the difference between feedforward architecture and the forward pass computation in your own words.
+ANSWER  =  The forward pass is the actual calculation through these layers, while feedforward refers to the overall architecture.
+
+############################3
+
