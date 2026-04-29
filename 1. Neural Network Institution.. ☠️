@@ -347,3 +347,15 @@ Layers stack these computations to learn complex patterns.
 
 ####################################
 
+Layers - MCQ
+You increase the number of hidden neurons from 2 to 10.
+What is the most likely effect?
+Answer = The network can learn more complex patterns
+Each neuron learns a different feature/pattern from the input.
+
+More neurons → more capacity to capture non-linear, complex, or subtle relationships in data.
+
+The architecture becomes more powerful and expressive.
+
+############################
+
