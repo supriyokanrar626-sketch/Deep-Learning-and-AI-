@@ -39,6 +39,7 @@ Why Deep Learning?
 Can handle complex, high-dimensional data like images, text, and audio
 Learns non-linear patterns that traditional Machine Learning models often struggle with
 Performs automatic feature extraction, reducing the need for manual feature engineering
+
 How It Works (Intuitive)
 
 Think of teaching a child to recognize cats:
@@ -77,149 +78,27 @@ The Math Behind a Neuron
 
 Here’s what a single neuron does:
 
-o
-u
-t
-p
-u
-t
-=
-(
-w
-1
-×
-x
-1
-)
-+
-(
-w
-2
-×
-x
-2
-)
-+
-(
-w
-3
-×
-x
-3
-)
-+
-b
-output=(w 
-1
-​
- ×x 
-1
-​
- )+(w 
-2
-​
- ×x 
-2
-​
- )+(w 
-3
-​
- ×x 
-3
-​
- )+b
-(
-x
-1
-,
-x
-2
-,
-x
-3
-x 
-1
-​
- ,x 
-2
-​
- ,x 
-3
-​
- ) → inputs (such as area, price, location)
-(
-w
-1
-,
-w
-2
-,
-w
-3
-w 
-1
-​
- ,w 
-2
-​
- ,w 
-3
-​
- ) → weights (how important each input is)
+output = (w1*x1) + (w2*x2) + (w3*x3) + b 
+
+(x1 , x2 , x3) → inputs (such as area, price, location)
+(w1 , w2 , w3) → weights (how important each input is)
 ( b ) → bias (a small adjustment factor)
 raw output value → the neuron’s raw decision value
+
 Example
 
 Let’s say our inputs are:
 
-Input	Meaning	Weight
-1000	Area	0.02
-3	Rooms	5
-7	Location score	10
+Input	   Meaning	      Weight
+1000	     Area	         0.02
+3	        Rooms     	    5
+7	     Location score	   10
+
 Then:
 
-o
-u
-t
-p
-u
-t
-=
-(
-1000
-×
-0.02
-)
-+
-(
-3
-×
-5
-)
-+
-(
-7
-×
-10
-)
-+
-1
-output=(1000×0.02)+(3×5)+(7×10)+1
-o
-u
-t
-p
-u
-t
-=
-20
-+
-15
-+
-70
-+
-1
-=
-106
+output = (1000×0.02)+(3×5)+(7×10)+1
 output=20+15+70+1=106
 This value (106) passed forward, and many such neurons working together combine to make powerful predictions.
+
+#############################3
+
