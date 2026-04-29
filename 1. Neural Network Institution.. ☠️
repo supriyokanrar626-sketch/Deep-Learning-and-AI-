@@ -440,3 +440,23 @@ print("Output Layer Neuron (Pass Probability):", round(output, 2))
 
 ########################################
 
+Forward Pass Through a Simple Neural Network
+Imagine you're building a neural network to predict whether a person will buy a product based on two features:
+
+time_spent_on_app (minutes)
+number_of_ads_seen
+Your network has the following architecture:
+
+1. Input Layer
+
+2 neurons → one for each feature.
+2. Hidden Layer
+
+1 neuron → takes both inputs, applies weights + bias, and produces a hidden output.
+3. Output Layer
+
+1 neuron → predicts the probability of buying the product.
+Your Task Fill in the blanks and complete the forward pass:
+
+Compute the hidden neuron value
+Use it to compute the output neuron value
