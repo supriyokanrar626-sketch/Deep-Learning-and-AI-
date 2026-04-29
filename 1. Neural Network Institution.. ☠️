@@ -263,3 +263,25 @@ more abstract features (like shapes, edges, or meanings) that help the network m
 
 ########################
 
+Neuron Output Calculation..
+Imagine a simple neuron that receives two inputs and produces a single output. 
+The neuron multiplies each input by a weight, sums the weighted inputs, and then adds a bias.
+
+Given the following:
+
+Input 1: 3
+Weight 1: 0.5
+Input 2: -2
+Weight 2: 0.1
+Bias: 1
+
+Answer = 2.3
+First, Multiply each input by its corresponding weight and sum the results:
+(3 × 0.5) + (-2 × 0.1) = 1.5 − 0.2 = 1.3.
+
+Then add the bias:
+1.3 + 1 = 2.3
+
+############################
+
+what is the output of the neuron?
