@@ -49,3 +49,14 @@ DL achieves this using artificial neural networks, which are layers of interconn
 
 ######################33333
 
+Deep Learning - MCQ
+Which of the following best describes Deep Learning?
+
+Answer = A method that automatically learns features from data..
+Deep Learning doesn’t rely on manually defined rules or features.
+Instead, it uses neural networks that automatically learn important patterns and 
+features directly from raw data (like images, text, or audio), making it different from traditional machine learning where
+features are often hand-crafted.
+
+##################
+
