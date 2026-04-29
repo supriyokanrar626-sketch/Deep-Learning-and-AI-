@@ -1,1 +1,25 @@
+Welcome to the Deep Learning (DL) & AI Course!
+Get ready to unlock the power of machines that can see, hear, and even understand patterns! 
+In this course, you’ll explore the fascinating world of Deep Learning (DL), Artificial Intelligence (AI), and Large Language Models (LLMs), and learn how to apply them to real-world problems.
 
+image
+Prerequisites:
+Before you start, make sure you are comfortable with:
+
+Python programming, NumPy (for numerical operations) and Pandas (for data manipulation)
+Matplotlib/Seaborn for visualization
+Basic Machine Learning concepts (classification, regression, clustering)
+How This Course Works
+
+Bite-sized lessons for easy learning at your own pace
+Visual explanations to make complex concepts simple and intuitive
+Learn Deep Learning step by step from neurons and MLPs to architectures, activations, optimizers, and how DL differs from ML.
+Build real projects across domains like Handwritten Digit Recognition, Cat vs Dog Image Classification, and text tasks like hate speech detection.
+Real-world examples to understand why DL and AI matter
+Advanced Applications:
+
+Turning images and text into numerical features
+Feature engineering for sequences and time series
+Text classification, sentiment analysis, summarization, and chatbots
+Explore the relationship between AI, ML, DL, and LLMs and understand how large language models work
+Click “Next” to start your Deep Learning adventure!
