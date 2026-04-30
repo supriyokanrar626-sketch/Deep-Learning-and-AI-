@@ -112,4 +112,7 @@ A network without any activation functions is used to separate two classes shape
 
 What will likely happen?
 
-ANSWER = 
+ANSWER = The network will behave like one big linear equation..
+No activation → no non-linearity → cannot learn curved boundaries.
+
+###########################
