@@ -344,3 +344,12 @@ print("Updated Weight:", weight)
 
 ###########################################
 
+Optimizer Short Answer
+If loss = error, then what is the optimizer, and what does it use to make corrections?
+
+ANSWER = Adam optimizer
+
+it use gradient of the loss function to update  the weights and make decision
+
+#################################
+
