@@ -1,0 +1,37 @@
+Activation Functions (Neurons Decision Maker)
+Okay, let's talk about Activations, Loss, and Optimizers. These are super important ingredients in making a neural network learn! 
+Remember how we talked about neurons and layers? Neurons take inputs, do some math, and then give an output. 
+These are three components that control the process, and we’ll cover them one by one, starting with Activations.
+
+What is an Activation Function?
+An activation function decides whether a neuron should “activate” (fire) or stay silent after doing its weighted calculation.
+It is basically Neuron's Decision Maker.
+
+Why Do We Need It?
+Without activation functions, a neural network becomes a long linear equation, even if it has many layers.
+Meaning: it cannot learn complex or curved patterns.
+
+Activation functions add non-linearity, allowing neural networks to learn things like:
+
+curves
+complex patterns
+shapes
+images
+language structure
+Real-life Analogy
+
+Think of an activation function as a bouncer at a club:
+
+If the input is strong enough → the bouncer lets it in
+If the input is weak → the bouncer rejects it
+
+Example: A simple activation function is the "ReLU" (Rectified Linear Unit). If the neuron's calculation is positive, ReLU outputs that value directly.
+If the calculation is negative, ReLU outputs zero. So, it only activates if the input is positive. Other common ones exist, but ReLU is a great
+starting point. It is one of the most commonly used activation functions.
+
+- If input > 0 → output = input  
+- If input ≤ 0 → output = 0  
+
+ReLU is simplest activation function and it is simple, fast, and works very well in deep networks.
+
+#############################
