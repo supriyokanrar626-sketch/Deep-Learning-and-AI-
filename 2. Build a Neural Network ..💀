@@ -232,13 +232,17 @@ which is (prediction - actual)^2. The calculation (68 - 75)^2 = (-7)^2 = 49 is c
 
 #####################################
 
-Optimizer (The Weight Adjuster)
-Optimizers are algorithms that help a neural network learn from its mistakes (as measured by the loss function). They adjust the weights (the numbers inside the connections between neurons) to try and reduce the loss.
+Optimizer (The Weight Adjuster)..
+
+Optimizers are algorithms that help a neural network learn from its mistakes (as measured by the loss function). 
+They adjust the weights (the numbers inside the connections between neurons) to try and reduce the loss.
 
 It is literally how the network learns.
 
 1. How it works (simplified):
-Backpropagation uses the loss to calculate gradients, and the optimizer uses those gradients to update the weights. The gradient tells us the direction of the steepest increase in the loss. The optimizer then takes a step in the opposite direction (down the gradient) to reduce the loss.
+Backpropagation uses the loss to calculate gradients, and the optimizer uses those gradients to update the weights. 
+The gradient tells us the direction of the steepest increase in the loss. The optimizer then takes a step in the opposite 
+direction (down the gradient) to reduce the loss.
 
 Backpropagation simply means: sending the error backward through the network to determine how much each weight contributed to it.
 
@@ -249,6 +253,7 @@ The optimizer uses the loss to decide:
 
 which direction each weight should change
 and by how much
+
 Example: Adam Optimizer
 Adam is like a smart coach:
 
@@ -263,15 +268,22 @@ Too large → training may become unstable
 Too small → training becomes very slow This is critical to understanding optimizers.
 Loss vs Optimizer: The loss function tells the network how wrong it is, while the optimizer decides how to fix it.
 
-Putting it All Together
+Putting it All Together.... READ CAREFULLY...
 
 Input: Data goes into the neural network.
+
 Calculations & Activation: Neurons perform calculations and use activation functions to decide whether to fire.
+
 Prediction: The network makes a prediction.
+
 Loss: The loss function compares the prediction to the correct answer and calculates a loss.
+
 Backpropagation: It takes the loss and figures out how much each weight contributed to the error by computing gradients.
+
 Optimization: The optimizer uses the loss to adjust the weights in the network, trying to reduce the loss.
+
 Repeat: This process is repeated many times with different data, gradually improving the network's ability to make accurate predictions.
+
 Think of it as a cycle: Predict, Measure the Error, Adjust, Repeat. This is how neural networks learn! You'll see these concepts used all the time.
 
 #################################
