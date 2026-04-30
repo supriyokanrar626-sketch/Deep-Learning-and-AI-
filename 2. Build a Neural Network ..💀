@@ -216,4 +216,12 @@ ANSWER = It calculates (50 - 70)²
 
 ##############################
 
+Loss Function - Short Answer..
 
+A neuron predicts a student's test score after applying an activation function.
+You are given:
+
+Predicted score (after activation): 68
+Actual score: 75
+Task
+Compute the MSE Loss for this prediction.
