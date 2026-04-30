@@ -322,3 +322,25 @@ This is how learning happens step by step.
 Updated Weight: 2.3
 
 ##########################
+
+# Dummy values from previous examples
+study_hours = 5
+prediction = 7   # output after activation
+actual = 10      # real target value
+
+# Current weight (before optimization)
+weight = 2.0
+
+# Learning rate
+lr = 0.01
+
+# Step 1: Compute gradient (simplified formula)
+gradient = -2 * study_hours * (actual - prediction)
+
+# Step 2: Update the weight using gradient descent
+weight = weight - lr * gradient
+
+print("Updated Weight:", weight)
+
+###########################################
+
