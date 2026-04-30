@@ -35,3 +35,42 @@ starting point. It is one of the most commonly used activation functions.
 ReLU is simplest activation function and it is simple, fast, and works very well in deep networks.
 
 #############################
+
+Understanding Activation Functions with Example
+In this example, we start with a single neuron that takes one input: the number of hours a student studied.
+To see how the neuron behaves, we first compute its raw output:
+
+output
+=
+(
+study hours
+×
+weight
+)
++
+bias
+output=(study hours×weight)+bias
+This raw output is just plain math — it has no decision-making capability yet.
+That is where the activation comes in.
+
+Why We Apply ReLU
+
+The ReLU activation function transforms the neuron's raw output into something more meaningful:
+
+If the output is positive → keep it
+If it’s negative → replace it with 0
+This helps the network learn non-linear patterns and ensures the neuron only activates for useful inputs.
+
+How It Works in Code
+
+The code first computes the raw neuron output, then applies:
+
+activated_output = max(0, raw_output)  # ReLU
+Expected Output
+
+Neuron Output (before activation): 55
+Activated Output (ReLU): 55
+
+##########################  CODE HERE ############
+
+
