@@ -204,3 +204,12 @@ print("Actual:", actual)
 print("Loss (MSE):", loss)
 
 ##########################
+
+Loss Function MCQ :
+
+You are predicting exam score for a student. For a particular student:
+Actual score = 70
+Predicted score = 50
+If Mean Squared Error (MSE) is used as the loss function, how is the resulting loss calculated?
+
+ANSWER = 
