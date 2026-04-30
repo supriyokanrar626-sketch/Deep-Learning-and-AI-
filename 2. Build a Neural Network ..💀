@@ -416,11 +416,22 @@ print("Updated Weight:", weight)
 
 #####################################
 
-Activation, Loss & Optimizer MCQ
+Activation, Loss & Optimizer MCQ...
+
 After one forward pass and optimizer step, the gardener notices:
 The raw output was 13
 
 The ReLU activation output (prediction) was 13 and the loss was 144.
 Which of the following statements is correct?
 
-ANSWER = 
+ANSWER = The neuron’s prediction was lower than the actual height, so the optimizer will increase the weight...
+because
+Raw output vs actual: 13 < 25 → the prediction is too low.
+
+Loss: MSE is (prediction - actual_height)^2 = (13-25)^2 = 144 → positive, indicates error magnitude.
+
+Optimizer step: Gradient points in the direction to reduce the loss, so weight will increase.
+
+ReLU: Only ensures output ≥ 0; it does not make loss negative.
+
+##################################################
