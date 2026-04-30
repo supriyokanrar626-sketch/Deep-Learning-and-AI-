@@ -271,20 +271,54 @@ Loss vs Optimizer: The loss function tells the network how wrong it is, while th
 Putting it All Together.... READ CAREFULLY...
 
 Input: Data goes into the neural network.
-
 Calculations & Activation: Neurons perform calculations and use activation functions to decide whether to fire.
-
 Prediction: The network makes a prediction.
-
 Loss: The loss function compares the prediction to the correct answer and calculates a loss.
-
 Backpropagation: It takes the loss and figures out how much each weight contributed to the error by computing gradients.
-
 Optimization: The optimizer uses the loss to adjust the weights in the network, trying to reduce the loss.
-
 Repeat: This process is repeated many times with different data, gradually improving the network's ability to make accurate predictions.
 
 Think of it as a cycle: Predict, Measure the Error, Adjust, Repeat. This is how neural networks learn! You'll see these concepts used all the time.
 
 #################################
 
+Understanding Optimizers with Example..
+
+We’ll use the same numbers from the earlier activation and loss examples, but here they act as dummy values so students can clearly see how the 
+optimizer steps work.
+
+Study hours (input): 5
+Prediction after activation: 7
+Actual score: 10
+Current weight: 2.0
+Learning rate: 0.01
+What the Optimizer Does
+
+To improve the prediction, the optimizer computes the gradient, which tells us:
+
+whether the weight should increase or decrease
+how big the adjustment should be
+
+How Gradient Descent Updates the Weight
+
+The simplified gradient formula we use is:
+
+gradient = −2 × input × (actual−prediction)
+
+Then the optimizer updates the weight:
+
+new_weight = old_weight − learning_rate × gradient
+
+What This Shows
+
+If the prediction is far from actual, the gradient is large → big correction
+If the prediction is close, the gradient is small → small correction
+If the model predicts perfectly, the gradient becomes 0 → no change needed
+
+Why This Example Helps
+
+You can clearly see that the optimizer continually tweaks the weight so that the loss decreases over time.
+This is how learning happens step by step.
+Updated Weight: 2.3
+
+##########################
