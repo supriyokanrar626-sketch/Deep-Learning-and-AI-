@@ -416,4 +416,11 @@ print("Updated Weight:", weight)
 
 #####################################
 
+Activation, Loss & Optimizer MCQ
+After one forward pass and optimizer step, the gardener notices:
+The raw output was 13
 
+The ReLU activation output (prediction) was 13 and the loss was 144.
+Which of the following statements is correct?
+
+ANSWER = 
