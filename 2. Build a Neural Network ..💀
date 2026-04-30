@@ -40,16 +40,8 @@ Understanding Activation Functions with Example
 In this example, we start with a single neuron that takes one input: the number of hours a student studied.
 To see how the neuron behaves, we first compute its raw output:
 
-output
-=
-(
-study hours
-×
-weight
-)
-+
-bias
 output=(study hours×weight)+bias
+
 This raw output is just plain math — it has no decision-making capability yet.
 That is where the activation comes in.
 
@@ -73,4 +65,45 @@ Activated Output (ReLU): 55
 
 ##########################  CODE HERE ############
 
+# Input: Study hours
+study_hours = 5
+
+# Weight and bias
+weight = 10
+bias = 5
+
+# Raw neuron output (before activation)
+neuron_output = study_hours * weight + bias
+
+# Apply ReLU activation
+activated_output = max(0, neuron_output)
+
+print("Neuron Output (before activation):", neuron_output)
+print("Activated Output (ReLU):", activated_output)
+
+#############################
+
+ReLu Activation - Short Answer
+A neuron predicts a student’s performance score based on hours studied.
+
+Given:
+
+Input (hours studied): 4
+Weight: 12
+Bias: –30
+Activation: ReLU
+Task
+Write the value of the ReLU activation.
+
+ANSWER = ```
+Raw output = (input × weight) + bias  
+Raw output = (4 × 12) – 30  
+Raw output = 48 – 30  
+Raw output = **18**
+
+ReLU(18) = **max(0, 18) = 18**
+```
+18
+
+#########################
 
