@@ -212,4 +212,8 @@ Actual score = 70
 Predicted score = 50
 If Mean Squared Error (MSE) is used as the loss function, how is the resulting loss calculated?
 
-ANSWER = 
+ANSWER = It calculates (50 - 70)²
+
+##############################
+
+
