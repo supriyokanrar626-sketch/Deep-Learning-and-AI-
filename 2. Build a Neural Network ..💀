@@ -117,7 +117,8 @@ No activation → no non-linearity → cannot learn curved boundaries.
 
 ###########################
 
-Loss Function (How Wrong Are We)
+Loss Function (How Wrong Are We)..
+
 A loss function tells the network how wrong its prediction was. It’s basically the network’s error score.
 
 Why Do We Need It?
@@ -132,6 +133,7 @@ Imagine throwing darts:
 
 If you hit the bullseye → loss is low
 If the dart lands far away → loss is high
+
 Loss = distance from the correct answer.
 
 Example: Mean Squared Error (MSE)
