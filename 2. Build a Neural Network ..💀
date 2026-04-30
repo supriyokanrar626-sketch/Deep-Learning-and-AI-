@@ -225,3 +225,10 @@ Predicted score (after activation): 68
 Actual score: 75
 Task
 Compute the MSE Loss for this prediction.
+
+ANSWER = (68 - 75)² = 49 = (7)² 
+The student correctly identified the formula for Mean Squared Error (MSE) for a single data point,
+which is (prediction - actual)^2. The calculation (68 - 75)^2 = (-7)^2 = 49 is correct.
+
+#####################################
+
