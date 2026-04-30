@@ -107,3 +107,9 @@ ReLU(18) = **max(0, 18) = 18**
 
 #########################
 
+Activation MCQ
+A network without any activation functions is used to separate two classes shaped like circles inside each other (non-linear boundary).
+
+What will likely happen?
+
+ANSWER = 
