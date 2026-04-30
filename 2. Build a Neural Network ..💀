@@ -147,3 +147,45 @@ MSE punishes bigger mistakes more (because of the square),
 so the network learns to be more accurate over time...
 
 #####################
+
+Understanding Loss Function with Example
+After applying the activation function (e.g., ReLU), we get the neuron’s predicted score.
+But how do we know how far this prediction is from reality?
+That’s where the loss function comes in.
+
+Why We Use Mean Squared Error (MSE)
+
+The MSE formula is:
+
+Loss
+=
+(
+prediction
+−
+actual
+)
+2
+Loss=(prediction−actual) 
+2
+ 
+Small error → small loss
+Large error → much larger loss
+Squaring the difference ensures that all errors are positive and punishes bigger mistakes more heavily.
+
+How the Code Works
+
+Compute the prediction using the neuron output
+Compare it to the actual score (e.g., 80)
+Square the difference to calculate the loss
+prediction = neuron_output  # after activation
+actual = 80
+loss = (prediction - actual) ** 2
+print("Loss:", loss)
+By adjusting:
+
+weight
+bias
+You can see how the loss value changes:
+
+Lower loss → prediction is closer to actual value
+Higher loss → prediction is far from actual value
