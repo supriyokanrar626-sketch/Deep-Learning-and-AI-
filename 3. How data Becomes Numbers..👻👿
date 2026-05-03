@@ -30,3 +30,29 @@ Goal..
 
 By the end of this module, you will understand how to convert any kind of data, image, text, sound, or categories into the numeric vector form that 
 neural networks expect.
+
+################################3
+
+Why Neural Networks Can Only Handle Numbers
+Let’s understand this using a simple NumPy experiment.
+
+We try the same dot product twice:
+With numbers → works (neurons can multiply and add numbers)
+With strings → fails (because "hello" × "coders" is not valid math)
+Conclusion:
+If data isn’t numeric, a neural network cannot process it.
+So images, text, audio, labels, everything must be converted into numbers first.
+
+Code Explanation
+
+Create two numeric arrays: a and b.
+Compute their dot product → NumPy returns a number.
+Create a string array: c.
+Try a dot product with strings.
+NumPy throws an error because text cannot be multiplied.
+After running the code you will see
+
+Dot product using NUMBERS: 32
+Error when using STRINGS: data type must provide an itemsize
+
+#############################
