@@ -76,3 +76,35 @@ except Exception as e:
 
 ####################3 
 
+How Tabular Data Becomes Numbers..
+
+Imagine you have a dataset with information about people:
+
+Name	Age	Color	Country
+Alice	25	Red	India
+Bob	30	Blue	USA
+Carol	22	Green	Japan
+Age is numeric → the network can understand it.
+Color and Country are words → the network cannot process them directly.
+Goal: Represent these words as numbers so the neural network can work with them.
+
+There are two simple ways to represent words as numbers:
+
+1. Assign Simple Numbers
+
+Give each category a unique number.
+Example: Color → Red:0, Blue:1, Green:2
+
+2. Use Separate Columns for Each Category
+
+Make a column for each category, mark it as 1 if it’s present, 0 otherwise.
+
+Example for Color:
+Red	  Blue	Green
+1	   0   	0
+0	   1	0
+0      0	1
+
+Quick Reminder:
+You have already learned these two techniques in ML for representing categories numerically (label encoding and one-hot encoding), 
+here we will see them in action with tabular data. Keep this in mind as we go!
