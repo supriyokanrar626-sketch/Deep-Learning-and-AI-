@@ -1,1 +1,32 @@
+How Data Becomes Numbers..
 
+You already know how a neuron works. It takes numbers as inputs, combines them using weights and bias, applies an activation function, and produces
+an output..
+
+But real-world data is not naturally numeric.
+
+A picture is not a number.
+A word is not a number.
+A sound is not a number.
+A label like cat or dog is not a number..
+
+Yet, a neuron can only handle numeric values like:
+
+3.4
+0.12
+
+vectors, such as [0.5, 1.2, -0.7]
+Converting Real-World Data to Numbers
+To feed anything into a neural network, we must convert it into numerical form:
+
+Images → pixel values like [124, 98, 210, …]
+Words (e.g., "apple") → token IDs like 42
+Categories (e.g., “dog”) → numeric labels like 1
+Audio → amplitude values such as [0.12, 0.15, 0.08, …]
+
+Note: Only after this conversion can a neuron perform its mathematical operations.
+
+Goal..
+
+By the end of this module, you will understand how to convert any kind of data, image, text, sound, or categories into the numeric vector form that 
+neural networks expect.
