@@ -108,3 +108,31 @@ Red	  Blue	Green
 Quick Reminder:
 You have already learned these two techniques in ML for representing categories numerically (label encoding and one-hot encoding), 
 here we will see them in action with tabular data. Keep this in mind as we go!
+
+######################
+
+Tabular MCQ
+You are preparing a dataset for a machine learning model.
+The dataset contains the following features:
+
+Name	Age	Color	Country
+Alice	25	Red	India
+Bob	30	Blue	USA
+Carol	22	Green	Japan
+The model throws an error saying: "Input contains non-numeric values."
+To fix this, you must convert the categorical features (Color, Country) into numbers.
+
+Question
+Which of the following is the MOST appropriate way to convert the features Color and Country into numeric form so that the model can process the data?
+############################
+ANSWER = Create separate columns for each category using 0s and 1s.
+Red | Blue | Green -> [1,0,0], [0,1,0], [0,0,1]
+
+Machine learning models require numeric input.  
+For categories like Color and Country (no natural order), one-hot encoding is the safest method:
+
+- It avoids creating a fake order between categories  
+- It treats each category independently  
+- It works well for most ML models
+
+#################################333
