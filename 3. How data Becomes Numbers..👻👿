@@ -300,3 +300,35 @@ print(one_hot)  # Fill in: print the one-hot encoded DataFrame
 
 #################################33
 
+Understand Raw Images
+Images are one of the most common inputs for neural networks.
+However, neurons cannot understand raw images directly, they only understand numbers.
+
+Theory: How Images Become Numbers (Real-World Example)
+
+Example: Imagine a traffic camera capturing a stop sign.
+
+The camera saves it as an image, which humans can instantly recognize as a stop sign.
+For a neural network, this stop sign is just a grid of pixels with numbers representing colors and brightness.
+Pixel Representation:
+
+Grayscale: 1 number per pixel (0 = black, 255 = white)
+Color (RGB): 3 numbers per pixel (R, G, B channels, 0-255 each)
+Flattening the Image:
+
+Neural networks work with a single list of numbers, so we flatten the image.
+Think of flattening as laying out all the pixel values in one long line, converting the 2D image into a 1D array.
+Scaling for Learning:
+
+Pixel values are often scaled to a smaller range (0-1) to make it easier for the network to learn patterns.
+Key Idea:
+A traffic sign image → grid of pixel numbers → flatten → scale → feed to a network.
+
+To the network, it’s just numbers; it doesn’t “see” the stop sign, only patterns in numbers.
+Once the image becomes a vector of numbers, we can feed it into a neural network (like an MLP) so the model can learn to recognize
+patterns inside those digits. Don’t worry about MLP (Multi-Layer Perceptron) right now, we’ll learn it properly in the next submodule.
+
+Why This Matters:
+By representing images as numbers, neural networks can learn to recognize objects, signs, faces, and more, all from numeric patterns.
+
+###########################
