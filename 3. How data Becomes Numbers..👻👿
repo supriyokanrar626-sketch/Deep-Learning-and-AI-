@@ -226,3 +226,49 @@ print("\nOne-Hot Encoding:")
 print(one_hot)
 
 #################################
+
+Convert Categorical Data to Numbers
+We have a small dataset showing different fruits and their quantities:
+
+Fruit	Quantity
+Apple	10
+Mango	15
+Banana	7
+Apple	12
+The Quantity column is numeric → the network can use it directly.
+The Fruit column is made of words → the network cannot process it directly.
+Goal: Represent the Fruit column in numeric form so a neural network can work with it.
+
+Task
+
+Choose an approach to convert the Fruit column into numbers:
+
+Assign simple numbers (label encoding)
+Use separate columns for each fruit (one-hot encoding)
+Convert the table into numeric form.
+
+Expected Output
+
+Original Data:
+    Fruit  Quantity
+0   Apple        10
+1   Mango        15
+2  Banana         7
+3   Apple        12
+
+After Label Encoding:
+    Fruit  Quantity  Fruit_Label
+0   Apple        10            0
+1   Mango        15            1
+2  Banana         7            2
+3   Apple        12            0
+
+One-Hot Encoding:
+   Apple  Banana  Mango
+0      1       0      0
+1      0       0      1
+2      0       1      0
+3      1       0      0
+
+##################################    CODE HEREE #########
+
