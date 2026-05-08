@@ -451,3 +451,8 @@ Words → Tokens → Numbers → Neural Network Input
 
 Reminder
 We are only learning the basic idea: text must be turned into numbers. More advanced techniques such as modern text models come later.
+
+###############################
+
+Raw Text - Short Answer
+In one sentence, why do we assign numbers (token IDs) to words before giving text to a neural network?
