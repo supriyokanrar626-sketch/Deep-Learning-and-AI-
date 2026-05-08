@@ -532,3 +532,29 @@ print("Token IDs:", token_ids)
 # (we will see how MLPs classify text step by step next)
 
 ####################################
+
+Converting Text Into Numbers
+In this exercise, you’ll repeat the same idea used in the demonstration: turning raw text into a numeric format that a neural network can understand.
+
+Task
+Using the sentence: "deep learning rocks"
+
+Do the following:
+
+Create your own token-to-ID mapping
+(You can choose any IDs you want, as long as each token gets a unique number.)
+
+Tokenize the sentence by words
+→ ["deep", "learning", "rocks"]
+
+Convert the sentence into a list of numbers
+using the mapping you created.
+
+Expected Output
+
+Tokens: ['deep', 'learning', 'rocks']
+Token → ID Mapping: {'deep': 1, 'learning': 2, 'rocks': 3}
+Numeric Vector: [1, 2, 3]
+
+###############   CODE BELOW ##########3
+
