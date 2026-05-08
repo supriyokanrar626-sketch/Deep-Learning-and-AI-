@@ -272,3 +272,31 @@ One-Hot Encoding:
 
 ##################################    CODE HEREE #########
 
+import pandas as pd
+
+# Original table
+data = pd.DataFrame({
+    "Fruit": ["Apple", "Mango", "Banana", "Apple"],
+    "Quantity": [10, 15, 7, 12]
+})
+
+print("Original Data:")
+print(data)  # Fill in: print the original DataFrame
+
+# ----- Label Encoding -----
+label_map = {"Apple": 0, "Mango": 1, "Banana": 2}
+data["Fruit_Label"] = data["Fruit"].map(label_map)  
+# Fill in: access the "Fruit" column and apply the label mapping
+
+print("\nAfter Label Encoding:")
+print(data)  # Fill in: print the DataFrame after label encoding
+
+# ----- One-Hot Encoding -----
+one_hot = pd.get_dummies(data["Fruit"], dtype=int)  
+# Fill in: use a pandas function to create one-hot encoded columns for "Fruit"
+
+print("\nOne-Hot Encoding:")
+print(one_hot)  # Fill in: print the one-hot encoded DataFrame
+
+#################################33
+
