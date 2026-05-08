@@ -456,3 +456,50 @@ We are only learning the basic idea: text must be turned into numbers. More adva
 
 Raw Text - Short Answer
 In one sentence, why do we assign numbers (token IDs) to words before giving text to a neural network?
+
+ANSWER = Neural network do not recognize words
+
+#########################
+
+Sentiment Analysis Pipeline (Simplified)
+Imagine you are building a sentiment analysis system for customer reviews.
+
+Example review:
+"This product is amazing"
+A neural network cannot read or understand raw English. So before the review goes into the model, we must convert it into numbers.
+Below is a simple demonstration of how the conversion works.
+
+Real Use Case: Sentiment Analysis Pipeline (Simplified)
+
+1. User writes a review - "This product is amazing"
+
+2. Tokenize the text - Split the review into words your system can handle:
+["this", "product", "is", "amazing"]
+
+3. Assign each word an ID from a vocabulary - In a real system, this vocabulary is built from thousands of reviews.
+Here, we simulate a tiny one:
+
+"this" → 1
+"product" → 2
+"is" → 3
+"amazing" → 4
+4. Convert the review into a numeric vector - [1, 2, 3, 4]
+This vector becomes the input that goes into a neural network.
+
+5. Explain where it goes next - These numbers will later be fed into an MLP, but don’t worry,
+we’ll learn MLPs in the next submodule.
+
+Note: We use Python's built-in re module (regular expressions) only to clean the text by removing unwanted characters. You don’t need to know regex yet, this is just simple preprocessing.
+
+Why this matters
+
+Just like you can’t do math with the word "amazing", a neural network can’t process raw text.
+So the entire point of this demonstration is:
+Words → Numbers → Model Input
+
+Expected Output
+
+Tokens: ['this', 'product', 'is', 'amazing']
+Token IDs: [1, 2, 3, 4]
+
+#####################################
