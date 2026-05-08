@@ -136,3 +136,67 @@ For categories like Color and Country (no natural order), one-hot encoding is th
 - It works well for most ML models
 
 #################################333
+
+Converting a Small Table to Numbers
+Imagine you have a small dataset showing colors and some values:
+
+Color	Value
+Red	10
+Blue	20
+Green	30
+The Value column is numeric → the network can use it directly.
+The Color column is made of words → the network cannot process it directly.
+Goal: Represent the Color column in a numeric form so the neural network can understand it.
+
+Step 1: Assign Simple Numbers (Label Encoding)
+
+We give each color a unique number:
+Red → 0
+Blue → 1
+Green → 2
+This converts the Color column into a numeric column called Color_Label.
+
+Result:
+
+Color	Value	Color_Label
+Red	10	0
+Blue	20	1
+Green	30	2
+Step 2: Use Separate Columns for Each Category (One-Hot Encoding)
+
+Create a separate column for each color.
+Mark 1 if the row has that color, 0 otherwise.
+Result:
+
+Blue	Green	Red
+0	0	1
+1	0	0
+0	1	0
+Key Takeaways:
+
+Neural networks cannot work directly with words.
+We can represent categories numerically in two ways:
+Assigning a unique number to each category (label encoding)
+Creating separate columns for each category (one-hot encoding)
+Use the method depending on the type of data and model requirements.
+Expected Output
+
+Original Data:
+   Color  Value
+0    Red     10
+1   Blue     20
+2  Green     30
+
+After Label Encoding:
+   Color  Value  Color_Label
+0    Red     10            0
+1   Blue     20            1
+2  Green     30            2
+
+One-Hot Encoding:
+   Blue  Green  Red
+0     0      0    1
+1     1      0    0
+2     0      1    0
+
+############################  CODE HERE #############
