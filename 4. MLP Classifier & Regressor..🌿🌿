@@ -72,3 +72,11 @@ MLP Regression is simply an MLP configured to output one numeric value and train
 
 #####################
 
+MLP Regressor MCQ
+Which of the following correctly describes the forward pass in an MLP used for regression?
+
+ABSWER = Input features -> hidden layers -> output layer with one neuron -> numeric prediction
+In MLP Regression:  
+- Input features are passed through **hidden layers**, which learn patterns.  
+- The **output layer has one neuron** with **linear activation**, producing a numeric prediction.  
+- Hidden layers are essential for capturing non-linear relationships, and the forward pass always flows from input → hidden → output.
