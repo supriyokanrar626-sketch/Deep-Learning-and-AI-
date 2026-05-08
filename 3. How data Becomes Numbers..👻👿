@@ -200,3 +200,29 @@ One-Hot Encoding:
 2     0      1    0
 
 ############################  CODE HERE #############
+
+import pandas as pd
+
+# Sample table
+data = pd.DataFrame({
+    "Color": ["Red", "Blue", "Green"],
+    "Value": [10, 20, 30]
+})
+
+print("Original Data:")
+print(data)
+
+# Label encoding
+label_map = {"Red": 0, "Blue": 1, "Green": 2}
+data["Color_Label"] = data["Color"].map(label_map)
+
+print("\nAfter Label Encoding:")
+print(data)
+
+# One-hot encoding
+one_hot = pd.get_dummies(data["Color"], dtype=int)  
+
+print("\nOne-Hot Encoding:")
+print(one_hot)
+
+#################################
