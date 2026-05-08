@@ -314,13 +314,14 @@ Pixel Representation:
 
 Grayscale: 1 number per pixel (0 = black, 255 = white)
 Color (RGB): 3 numbers per pixel (R, G, B channels, 0-255 each)
-Flattening the Image:
 
+Flattening the Image:
 Neural networks work with a single list of numbers, so we flatten the image.
 Think of flattening as laying out all the pixel values in one long line, converting the 2D image into a 1D array.
-Scaling for Learning:
 
+Scaling for Learning:
 Pixel values are often scaled to a smaller range (0-1) to make it easier for the network to learn patterns.
+
 Key Idea:
 A traffic sign image → grid of pixel numbers → flatten → scale → feed to a network.
 
@@ -332,3 +333,10 @@ Why This Matters:
 By representing images as numbers, neural networks can learn to recognize objects, signs, faces, and more, all from numeric patterns.
 
 ###########################
+
+Raw Image - Short Answer
+What does flattening an image do before sending it to a neural network?
+
+ANSWER = it converts the picture into 1D array of pixel grid 
+
+##########################
