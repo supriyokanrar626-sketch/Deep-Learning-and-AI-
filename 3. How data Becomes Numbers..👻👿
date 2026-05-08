@@ -489,7 +489,8 @@ This vector becomes the input that goes into a neural network.
 5. Explain where it goes next - These numbers will later be fed into an MLP, but don’t worry,
 we’ll learn MLPs in the next submodule.
 
-Note: We use Python's built-in re module (regular expressions) only to clean the text by removing unwanted characters. You don’t need to know regex yet, this is just simple preprocessing.
+Note: We use Python's built-in re module (regular expressions) only to clean the text by removing unwanted characters.
+You don’t need to know regex yet, this is just simple preprocessing.
 
 Why this matters
 
@@ -503,3 +504,31 @@ Tokens: ['this', 'product', 'is', 'amazing']
 Token IDs: [1, 2, 3, 4]
 
 #####################################
+
+import re
+
+# Step 1: Input review
+review = "This product is amazing"
+
+# Step 2: Basic tokenization (lowercase + split)
+tokens = re.findall(r"\w+", review.lower())
+print("Tokens:", tokens)
+
+# Step 3: Pretend this is our vocabulary
+vocab = {
+    "this": 1,
+    "product": 2,
+    "is": 3,
+    "amazing": 4,
+    "bad": 5,
+    "terrible": 6
+}
+
+# Step 4: Convert tokens to numbers
+token_ids = [vocab.get(token, 0) for token in tokens]  # 0 = unknown word
+print("Token IDs:", token_ids)
+
+# These numbers will later be fed into an MLP 
+# (we will see how MLPs classify text step by step next)
+
+####################################
