@@ -420,3 +420,34 @@ print("First 10 pixel values:", img_flat[:10])
 
 ####################################
 
+Understand Raw Text
+We’ve seen how images become numbers. Now we’ll explore how raw text is transformed into numerical form for neural networks.
+Imagine you’re building an app that reads customer reviews like:
+“This product is amazing!”
+
+Humans instantly understand the meaning, but a neural network doesn’t.
+To the network, text is meaningless until we convert it into numbers.
+
+Theory: How Text Becomes Numbers (Real-World View)
+
+Tokenization
+Break the sentence into pieces (usually words):
+"This product is amazing" → ["This", "product", "is", "amazing"]
+
+Assign each token a number (Token IDs)
+Think of it like giving each word a roll number:
+
+"This" → 1
+"product" → 2
+"is" → 3
+"amazing" → 4
+Convert the sentence into a numeric vector
+["This", "product", "is", "amazing"] → [1, 2, 3, 4]
+
+This sequence of numbers is what a neural network can actually process.
+
+Key Idea
+Words → Tokens → Numbers → Neural Network Input
+
+Reminder
+We are only learning the basic idea: text must be turned into numbers. More advanced techniques such as modern text models come later.
