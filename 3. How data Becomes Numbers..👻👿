@@ -558,3 +558,42 @@ Numeric Vector: [1, 2, 3]
 
 ###############   CODE BELOW ##########3
 
+import re
+
+# Sentence
+text = "deep learning rocks"
+
+# Step 1: Tokenize using regex 
+tokens = re.findall(r"\w+", text.lower())  
+# → ["deep", "learning", "rocks"]
+
+# Step 2: Create token-to-ID mapping
+token_to_id = {
+    "deep": 1,
+    "learning": 2,
+    "rocks": 3
+}
+
+# Step 3: Convert tokens to their numeric IDs
+numeric_vector = [token_to_id[token] for token in tokens]
+
+print("Tokens:", tokens)
+print("Token → ID Mapping:", token_to_id)
+print("Numeric Vector:", numeric_vector)
+
+######################
+
+MCQ
+A student wants to prepare different types of data so they can be used by a neural network.
+Which of the following correctly pairs each type of data with the way it is converted into numbers?
+
+ANSWER = Images -> Pixel numbers + flattening,  
+Text -> Token IDs,  
+Categorical data -> One-hot encoding
+
+Explanation
+- Images must be converted into pixel numbers, flattened into a vector.  
+- Text must be tokenized and each word must be assigned a token ID.  
+- Categorical data must be converted using one-hot encoding or numeric codes. 
+
+###################
