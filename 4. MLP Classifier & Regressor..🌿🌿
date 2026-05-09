@@ -294,3 +294,8 @@ MLP Classification is simply an MLP configured to output one probability per cla
 
 ###########################
 
+MLP Classifier
+A data scientist is building an MLP to classify flowers as Setosa, Versicolor, or Virginica. Which of the following statements
+correctly describes how the network predicts the flow
+
+ANSWER = 
