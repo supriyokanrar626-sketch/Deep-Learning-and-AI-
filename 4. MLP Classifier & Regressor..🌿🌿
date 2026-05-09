@@ -298,4 +298,11 @@ MLP Classifier
 A data scientist is building an MLP to classify flowers as Setosa, Versicolor, or Virginica. Which of the following statements
 correctly describes how the network predicts the flow
 
-ANSWER = 
+ANSWER = The network outputs one probability per class using softmax, and the class with the highest probability is chosen.
+According to the theory:  
+- For classification, the output layer has one neuron per class.  
+- Softmax converts raw scores into probabilities that sum to 1.  
+- The flower class with the highest probability is selected as the prediction.  
+Other options are incorrect because linear outputs, numeric approximations, or ASCII conversions are not how MLP classification works.
+
+########################
