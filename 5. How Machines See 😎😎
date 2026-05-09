@@ -25,10 +25,13 @@ Humans see the same digit. The model receives different numbers. So even tiny vi
 From the first module, you learned that an MLP works like this:
 Input numbers → multiplied by weights → added with bias → activation → next layer
 
-An MLP does not understand shapes or meaning, it treats each pixel value as just another number. When pixel values change, the Weight multiplications change, Neuron activations change and then Final prediction can change a lot. Because images have many inputs, these small numeric changes get amplified as data flows through layers.
+An MLP does not understand shapes or meaning, it treats each pixel value as just another number. When pixel values change, the Weight multiplications
+change, Neuron activations change and then Final prediction can change a lot. Because images have many inputs, these small numeric changes get 
+amplified as data flows through layers.
 
 4. Real-World Image Variations
-In real images: lighting changes, writing styles differ, and camera quality varies. All of these slightly change pixel values, even if the object is the same.
+In real images: lighting changes, writing styles differ, and camera quality varies. All of these slightly change pixel values, even if the object
+is the same.
 
 This makes image learning especially challenging for simple neural networks like MLPs.
 
@@ -39,3 +42,47 @@ Two images of the same digit look almost identical to humans, but the MLP treats
 
 ANSWER = Small visual changes cause pixel values to change..
 because, even small visual differences (like darkness or thickness) change pixel numbers, which the MLP directly uses.
+
+###########################
+
+Effect of Small Pixel Changes on MLP
+In this demonstration, we will work with two images that represent the same object.
+
+To create a small difference between them, we slightly change how light or dark the image appears.
+This is done using a single line of code, but you do not need to learn how this works internally.
+
+The purpose of this step is not image editing.
+It is only used to simulate what already happens naturally in real-world image data.
+
+In real life:
+
+Lighting conditions change
+Cameras capture brightness differently
+Writing pressure varies
+Screens and sensors are not identical
+Because of this, the same object can appear slightly different across images, even when nothing meaningful has changed.
+
+To humans, these images still look the same.
+To a neural network, these small visual differences become different pixel values.
+
+In the code, this is done using:
+
+enhancer = ImageEnhance.Brightness(img)  
+img_modified = enhancer.enhance(1.2)
+This simply creates a second version of the same image with a small numeric change.
+
+Now, we will use code to observe:
+
+How pixel values change
+How these numbers are passed as input to an MLP
+How the MLP’s final prediction reacts to this small change
+Expected output
+
+Original image pixel sample: [232 232 233 232 233]
+Modified image pixel sample: [255 255 255 255 255]
+Average pixel difference: 209.28
+Maximum pixel difference: 255
+Prediction for original image: [[1. 0.]]
+Prediction for modified image: [[1. 0.]]
+Note: Even though the pixel values changed, the final prediction stayed the same. This happens because the MLP has almost no training experience. 
+With many training images (such as handwritten digits), the same numeric change would influence the model’s output more clearly.
