@@ -222,3 +222,39 @@ print("Predicted price for modified image:", pred_modified[0])
 
 ##############################33
 
+Normalization
+In the previous module, we learned how images (and other data) are converted into numbers and fed into a neural network (MLP). We also saw that small changes in pixel values can create large numeric differences, and that the MLP reacts to raw numbers directly.
+
+However, there is a missing piece:
+
+Input features can have very different numeric ranges.
+MLPs treat all numbers as-is, so features with larger values can dominate learning, while smaller features may be ignored.
+Notice how some numbers are much bigger than others? Without normalization, the network cannot know which features are more important, it just multiplies numbers by weights. This can lead to:
+
+Slow training and Unstable learning
+Difficulty in converging to a good solution
+What is Normalization?
+
+Normalization is the process of scaling all input numbers to a similar range.
+
+For example, pixel values that were in the range 0-255 can be scaled to 0-1
+Apartment sizes (500-2000) can be scaled so they also roughly fall between 0-1
+The goal is that all features contribute roughly equally to learning
+Think of it like shrinking everything to the same scale so the network doesn’t get “confused” by large differences in numbers.
+
+Why Normalization Helps MLPs
+
+Faster learning – weights update more efficiently when inputs are on a similar scale
+Stability – prevents very large input numbers from dominating neuron activations
+Better accuracy – ensures the network focuses on patterns, not raw magnitude
+Handles visual differences better – small changes in pixel values are reflected proportionally
+Key Idea: Normalization ensures that all features are on a similar scale, letting the MLP focus on patterns and relationships rather than absolute magnitudes.
+
+In machine learning, you may also see:
+
+Min–Max Scaling (scales values into a fixed range, usually 0–1)
+Standardization (centers data around 0 and scales by how spread out it is)
+You have already encountered these techniques in the ML course. In this module, we focus mainly on normalization for images because:
+
+Image pixel values have a known and fixed range
+Normalization works naturally and reliably for visual data
