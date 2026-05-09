@@ -306,3 +306,41 @@ According to the theory:
 Other options are incorrect because linear outputs, numeric approximations, or ASCII conversions are not how MLP classification works.
 
 ########################
+
+How MLP Classification Works
+In this demonstration, we will build a simple MLP classifier to predict a categorical outcome, whether a student passes or fails based on study hours.
+This helps you understand how an MLP assigns probabilities to classes and makes decisions.
+
+What We Are Doing
+
+Prepare a tiny dataset
+
+Input feature: hours studied
+Output label: 0 = fail, 1 = pass
+Build a small MLP Classifier
+
+One hidden layer with 5 neurons
+Activation: ReLU
+Max iterations: 1000
+Train the model
+
+The network learns patterns in numeric input to predict categories
+Uses Cross-Entropy Loss internally (measures difference between predicted probabilities and actual classes)
+Predict probabilities and classes
+
+predict_proba() → gives probability for each class
+predict() → chooses the class with the highest probability
+Observe the output
+
+Understand how the network assigns probabilities
+See how it converts numeric input into categorical predictions
+Expected Output
+
+Predicted probabilities:
+ [[0.97 0.03]
+ [0.91 0.09]
+ [0.65 0.35]
+ [0.25 0.75]
+ [0.06 0.94]
+ [0.01 0.99]]
+Predicted classes: [0 0 0 1 1 1]
