@@ -80,3 +80,54 @@ In MLP Regression:
 - Input features are passed through **hidden layers**, which learn patterns.  
 - The **output layer has one neuron** with **linear activation**, producing a numeric prediction.  
 - Hidden layers are essential for capturing non-linear relationships, and the forward pass always flows from input → hidden → output.
+
+################################
+
+How MLP Regression Works
+In this demonstration, we will build a very simple MLP regressor to predict a numeric value from a few input features.
+This helps you understand exactly how data flows through the network and how MSE is used during training.
+
+We’ll use a tiny example:
+Predicting a student's final score based on two features:
+
+Hours studied
+Number of practice problems solved
+The goal is to show how the forward pass, loss calculation, and training work in practice.
+
+What the Code Does
+
+1. Prepare numeric input data: We create a tiny dataset with two features (hours & practice problems) and a numeric target (score).
+
+2. Build a small MLP regressor:
+
+Input layer: 2 values
+Hidden layer: 4 neurons with ReLU
+Output layer: 1 neuron (regression output)
+3. Train the model: The model tries to minimize MSE, which you already learned in ML.
+
+4. Make a prediction: We test the model on a new student’s data.
+
+Note
+The warning while running code is normal and happens because:
+The model needed more iterations to reduce the loss, But you set max_iter=100, so training stopped early.
+
+Expected Output
+
+Training Data (X):
+[[ 1 10]
+ [ 2 20]
+ [ 3 30]
+ [ 4 40]]
+
+Target Values (y):
+[40 50 60 70]
+/home/chef/venv/lib/python3.11/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (2000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+
+Model training complete!
+
+New Input: [[ 5 50]]
+Predicted Score: 98.06
+
+#########################################
+
