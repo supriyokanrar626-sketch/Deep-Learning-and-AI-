@@ -254,7 +254,8 @@ print("\nNew Apartment:", new_apartment)
 print("Predicted Rent: $", round(predicted_rent[0], 2))
 #################
 
-MLP Classifier
+MLP Classifier..
+
 An MLP (Multi-Layer Perceptron) can also predict categories/classes instead of continuous numerical values.
 
 Instead of one continuous output, the output layer has one neuron per class, and the network assigns probabilities to each class.
@@ -269,11 +270,12 @@ Data flow: Input Features → Hidden Layer(s) → Output Layer (one neuron per c
 
 2. Differences from Regression
 
-Aspect	Regression	Classification
-Output	Continuous number	Class labels
-Output layer	1 neuron (linear)	n neurons (softmax)
-Loss function	MSE	Cross-Entropy
-Prediction	Exact numeric value	Probability per class
+Aspect	     Regression                   	Classification
+Output	     Continuous number	           Class labels
+Output layer	1 neuron (linear)	          n neurons (softmax)
+Loss function 	MSE	                       Cross-Entropy
+Prediction	Exact numeric value	          Probability per class
+
 3. Forward Pass (Intuition)
 
 Input → hidden layers (apply weights, bias, activation function)
@@ -291,3 +293,4 @@ Key Idea:
 MLP Classification is simply an MLP configured to output one probability per class and trained using Cross-Entropy Loss.
 
 ###########################
+
