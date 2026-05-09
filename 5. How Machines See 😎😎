@@ -1,1 +1,32 @@
 
+What Patterns MLP Learns from Image Numbers
+Now, we move one step deeper. Images are very different from tabular data, and this creates unique challenges for neural networks. Let’s understand why learning from images is hard.
+
+You already know that images are converted into numbers. Now we focus on what happens after those numbers enter a neural network.
+
+1. Images Have Many Inputs: Compared to tabular data, images send many more numbers into the model.
+
+Example:
+
+House price prediction → few inputs (rooms, area)
+A small image → hundreds of pixel values at once
+This means the network must learn from a very large input space.
+
+2. Small Visual Changes Create Large Numeric Changes: Images that look almost the same to humans can have very different pixel values.
+
+Example:
+
+A lightly written digit
+The same digit written darker
+Humans see the same digit. The model receives different numbers. So even tiny visual changes can significantly change the input data.
+
+3. How This Affects an MLP
+From the first module, you learned that an MLP works like this:
+Input numbers → multiplied by weights → added with bias → activation → next layer
+
+An MLP does not understand shapes or meaning, it treats each pixel value as just another number. When pixel values change, the Weight multiplications change, Neuron activations change and then Final prediction can change a lot. Because images have many inputs, these small numeric changes get amplified as data flows through layers.
+
+4. Real-World Image Variations
+In real images: lighting changes, writing styles differ, and camera quality varies. All of these slightly change pixel values, even if the object is the same.
+
+This makes image learning especially challenging for simple neural networks like MLPs.
