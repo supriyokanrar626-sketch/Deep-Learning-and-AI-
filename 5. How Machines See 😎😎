@@ -1,6 +1,7 @@
 
-What Patterns MLP Learns from Image Numbers
-Now, we move one step deeper. Images are very different from tabular data, and this creates unique challenges for neural networks. Let’s understand why learning from images is hard.
+What Patterns MLP Learns from Image Numbers...
+Now, we move one step deeper. Images are very different from tabular data, and this creates unique challenges for neural networks.
+Let’s understand why learning from images is hard.
 
 You already know that images are converted into numbers. Now we focus on what happens after those numbers enter a neural network.
 
@@ -30,3 +31,11 @@ An MLP does not understand shapes or meaning, it treats each pixel value as just
 In real images: lighting changes, writing styles differ, and camera quality varies. All of these slightly change pixel values, even if the object is the same.
 
 This makes image learning especially challenging for simple neural networks like MLPs.
+
+#####################
+
+MCQ
+Two images of the same digit look almost identical to humans, but the MLP treats them differently. Why?
+
+ANSWER = Small visual changes cause pixel values to change..
+because, even small visual differences (like darkness or thickness) change pixel numbers, which the MLP directly uses.
