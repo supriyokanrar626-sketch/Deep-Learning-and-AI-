@@ -252,3 +252,42 @@ predicted_rent = model.predict(new_apartment)
 
 print("\nNew Apartment:", new_apartment)
 print("Predicted Rent: $", round(predicted_rent[0], 2))
+#################
+
+MLP Classifier
+An MLP (Multi-Layer Perceptron) can also predict categories/classes instead of continuous numerical values.
+
+Instead of one continuous output, the output layer has one neuron per class, and the network assigns probabilities to each class.
+The class with the highest probability is chosen as the prediction.
+
+1. Real-World Examples
+
+Predict if a flower is Setosa, Versicolor, or Virginica
+Predict if an email is Spam or Not Spam
+Classify images: Cat / Dog / Other
+Data flow: Input Features → Hidden Layer(s) → Output Layer (one neuron per class)
+
+2. Differences from Regression
+
+Aspect	Regression	Classification
+Output	Continuous number	Class labels
+Output layer	1 neuron (linear)	n neurons (softmax)
+Loss function	MSE	Cross-Entropy
+Prediction	Exact numeric value	Probability per class
+3. Forward Pass (Intuition)
+
+Input → hidden layers (apply weights, bias, activation function)
+Output layer → generates raw scores
+Apply Softmax → converts scores to probabilities that sum to 1
+Choose the class with highest probability
+X → Hidden Layers → Softmax → Class
+
+4. About Softmax (High-Level)
+
+Converts raw outputs into probabilities
+Ensures the network decides which class is most likely
+Probability values always sum to 1
+Key Idea:
+MLP Classification is simply an MLP configured to output one probability per class and trained using Cross-Entropy Loss.
+
+###########################
