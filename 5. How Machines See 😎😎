@@ -258,3 +258,5 @@ You have already encountered these techniques in the ML course. In this module, 
 
 Image pixel values have a known and fixed range
 Normalization works naturally and reliably for visual data
+
+###################################
