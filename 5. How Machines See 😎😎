@@ -433,3 +433,48 @@ mlp_norm.fit(_____, y)
 pred_norm = mlp_norm.predict(_____)
 
 print("Prediction WITH normalization:", round(pred_norm[0], 2))
+
+#################################
+
+Smiley Face Image and MLP Sensitivity
+In this practice problem, you will work with a smiley face image 🙂.
+
+To humans, the smiley face looks the same even if it becomes slightly brighter or darker.
+However, a neural network does not understand faces or emotions. It only processes numbers.
+
+You will take one smiley face image and create a slightly modified version by changing its brightness.
+This simulates natural variations such as lighting or screen brightness differences.
+
+You will then feed both images into an MLP and observe how:
+
+Pixel values change
+These numbers are used as inputs to the network
+Normalization affects the model’s behavior
+Task
+
+Complete the following steps:
+
+Load a smiley face image and convert it to grayscale
+Create a second version of the same image by slightly changing its brightness
+Convert both images into NumPy arrays and compare their pixel values
+Measure the numeric difference between the two images
+Flatten the images and use them as input to an MLP
+Train and evaluate an MLP Regressor (with and without normalization)
+Fill in all parameters to initialize an MLPRegressor, including:
+One hidden layer with 4 neurons
+ReLU activation function
+Adam optimizer
+max_iter = 2000
+Train the model using raw (unnormalized) pixel values and predict on the modified image.
+Normalize the pixel values and train the MLP again
+Compare how normalization changes the model’s response to the modified image
+Expected Output
+
+Original image pixel sample: [203 203 203 203 203]
+Modified image pixel sample: [243 243 243 243 243]
+Average pixel difference: 213.6454081632653
+Maximum pixel difference: 255
+Prediction WITHOUT normalization: -0.51
+Prediction WITH normalization: 1.4
+
+##################################
