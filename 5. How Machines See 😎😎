@@ -429,8 +429,8 @@ mlp_norm = MLPRegressor(
     random_state=42
 )
 
-mlp_norm.fit(_____, y)
-pred_norm = mlp_norm.predict(_____)
+mlp_norm.fit(X_norm, y)
+pred_norm = mlp_norm.predict(X_norm)
 
 print("Prediction WITH normalization:", round(pred_norm[0], 2))
 
