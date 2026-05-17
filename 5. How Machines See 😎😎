@@ -347,9 +347,11 @@ print("Prediction WITH normalization:", round(pred_norm[0], 2))
 ###############################
 
 Normalization with Image Data
-In the previous demonstration, you saw that neural networks react directly to numeric pixel values, and that normalization helps keep these values on a similar scale.
+In the previous demonstration, you saw that neural networks react directly to numeric pixel values, and that normalization helps keep
+these values on a similar scale.
 
-In this practice problem, you will work with image data again, so you can clearly see how normalization affects the numeric input given to an MLP.
+In this practice problem, you will work with image data again, so you can clearly see how normalization affects the numeric input given to 
+an MLP.
 
 Problem Scenario
 
@@ -372,9 +374,10 @@ Set max_iter to 2000
 Train the model using the normalized input data
 Generate a prediction using the normalized input
 Compare the predictions made by both models.
-Expected Output
+
+Expected Output :
 
 Prediction WITHOUT normalization: 28.0
 Prediction WITH normalization: 0.55
 
-#################################
+#################################  CODE BELOW #################
