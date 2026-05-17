@@ -381,3 +381,55 @@ Prediction WITHOUT normalization: 28.0
 Prediction WITH normalization: 0.55
 
 #################################  CODE BELOW #################
+
+from PIL import Image
+import numpy as np
+from sklearn.neural_network import MLPRegressor
+
+# 1. Load and prepare the image
+
+img = Image.open("shape.png").convert("L")
+img = img.resize((28, 28))
+
+# Convert image to NumPy array
+img_array = np.array(img)
+
+# Flatten image for MLP input
+X_raw = img_array.flatten().reshape(1, -1)
+
+# Target value (dummy regression target)
+y = [1]
+
+# 2. Train MLP WITHOUT normalization
+
+mlp_raw = MLPRegressor(
+    hidden_layer_sizes=(4,),
+    activation='relu',
+    solver='adam',
+    max_iter=2000,
+    random_state=42
+)
+
+mlp_raw.fit(X_raw, y)
+pred_raw = mlp_raw.predict(X_raw)
+
+print("Prediction WITHOUT normalization:", round(pred_raw[0], 0))
+
+# 3. Normalize image pixel values
+
+X_norm = X_raw / 255.0
+
+# 4. Train MLP WITH normalization
+
+mlp_norm = MLPRegressor(
+    hidden_layer_sizes=(4,),
+    activation='relu',
+    solver='adam',
+    max_iter=2000,
+    random_state=42
+)
+
+mlp_norm.fit(_____, y)
+pred_norm = mlp_norm.predict(_____)
+
+print("Prediction WITH normalization:", round(pred_norm[0], 2))
