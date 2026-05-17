@@ -233,8 +233,8 @@ Notice how some numbers are much bigger than others? Without normalization, the 
 
 Slow training and Unstable learning
 Difficulty in converging to a good solution
-What is Normalization?
 
+What is Normalization?
 Normalization is the process of scaling all input numbers to a similar range.
 
 For example, pixel values that were in the range 0-255 can be scaled to 0-1
