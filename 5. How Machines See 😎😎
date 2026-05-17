@@ -263,3 +263,18 @@ Normalization works naturally and reliably for visual data
 
 Short Answer
 What is normalization, and Give one example of it for image data.
+
+Answer = Normalization is scaling input values to a similar numeric range so that all features contribute more equally during learning.
+
+```
+Explanation:
+When all inputs are on a similar scale, the MLP can update weights more smoothly and focus on learning patterns instead of being influenced by large numeric differences.
+```
+
+Scaling pixel values from the range 0-255 to a range between 0-1.
+```
+Explanation:
+Image pixels have a fixed known range. Scaling them down makes the numeric values easier for the MLP to process and compare during training.
+```
+
+####################################3
