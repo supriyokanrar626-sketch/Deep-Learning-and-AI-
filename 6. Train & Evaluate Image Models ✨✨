@@ -185,3 +185,6 @@ for i in range(min(5, len(X_test))):
         f"Actual: {'Circle' if y_test[i] == 0 else 'Square'} | "
         f"Predicted: {'Circle' if predictions[i] == 0 else 'Square'}"
     )
+
+###########################33
+
