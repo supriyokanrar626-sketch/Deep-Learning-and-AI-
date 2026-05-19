@@ -44,9 +44,8 @@ In the next section, we will train an MLP on a small image dataset and observe h
 Image Classification - Short Answer
 What is image classification in the context of neural networks?
 
-ANSWER  =  Image classification is the task of predicting which class an image belongs to (such as a digit, shape, or object) instead of predicting a numeric value.
-
-
+ANSWER  =  Image classification is the task of predicting which class an image belongs to (such as a digit, shape, or object) instead of
+predicting a numeric value.
 ```
 Explanation:
 In image classification, a neural network does not understand images visually.
