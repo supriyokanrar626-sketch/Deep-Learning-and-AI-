@@ -65,3 +65,42 @@ The class with the highest score is chosen as the final prediction.
 Over time, the network learns numeric patterns that separate one class from another, even though it never “sees” the actual image.
 ```
 ##########################
+
+Image Classification with MLP (Circle vs Square)
+In this demonstration, we will use the Circle vs Square image dataset that has already been created.
+
+Each image:
+
+Is grayscale
+Has the same size
+Contains a single shape
+Belongs to one of two classes: circle or square
+The goal is to train an MLP to correctly classify these images based only on their pixel values.
+
+What We Are Doing in This Demonstration
+
+Load images from the dataset folders (circle and square)
+Convert each image into numeric pixel values
+Assign class labels:
+Circle → 0
+Square → 1
+(The label is decided automatically based on which folder the image comes from.)
+Normalize pixel values to keep inputs on a similar scale
+Train an MLP to learn patterns from multiple images
+Test the model on unseen images
+Observe how the MLP makes classification decisions
+Note
+
+In the code, images are loaded using a simple loop that:
+
+Goes through the circle folder and assigns label 0
+Goes through the square folder and assigns label 1
+You do not need to worry about how the loop works internally.
+Just remember: folder name → class label → numeric learning.
+
+This dataset is intentionally simple. The goal is not high accuracy, but to understand:
+
+How images are used as training data
+How an MLP learns from many examples
+
+Expected Output :
