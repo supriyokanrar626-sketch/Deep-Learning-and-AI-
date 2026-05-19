@@ -1,9 +1,11 @@
-Image Classification with MLP
+Image Classification with MLP..
+
 In the previous topics, we used images to understand how neural networks handle pixel values and why normalization is important.
 Now, we use that knowledge to solve a real-world task: image classification.
 
 What is Image Classification?
-Image classification means assigning a category or class to an image. Instead of predicting a number, the model chooses one label from many possible labels.
+Image classification means assigning a category or class to an image. Instead of predicting a number, the model chooses one label from
+many possible labels.
 
 Examples:
 
@@ -23,7 +25,8 @@ Each image is converted into a long list of pixel numbers
 The MLP processes these numbers through its layers
 The final layer produces a score for each class
 The class with the highest score becomes the prediction
-What the Model Learns
+
+What the Model Learns-------------
 
 During training:
 
@@ -35,3 +38,5 @@ Even though the MLP only sees numbers, it can still learn:
 “These number patterns usually mean digit 0”
 “These number patterns usually mean digit 1”
 In the next section, we will train an MLP on a small image dataset and observe how well it can perform image classification.
+
+#############################33
