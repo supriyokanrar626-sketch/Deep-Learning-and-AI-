@@ -104,3 +104,12 @@ How images are used as training data
 How an MLP learns from many examples
 
 Expected Output :
+Total images: 40
+Image vector size: 784
+Actual: Circle | Predicted: Circle
+Actual: Circle | Predicted: Circle
+Actual: Circle | Predicted: Circle
+Actual: Square | Predicted: Square
+Actual: Circle | Predicted: Circle
+
+#################################333333
