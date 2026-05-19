@@ -64,3 +64,4 @@ and converted into scores for each class.
 The class with the highest score is chosen as the final prediction.
 Over time, the network learns numeric patterns that separate one class from another, even though it never “sees” the actual image.
 ```
+##########################
