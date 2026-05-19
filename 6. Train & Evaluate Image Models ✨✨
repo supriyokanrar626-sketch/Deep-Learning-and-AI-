@@ -188,3 +188,37 @@ for i in range(min(5, len(X_test))):
 
 ###########################33
 
+Triangle vs Cross (X)
+In this practice problem, you will build an image classification model using an MLP to distinguish between triangles and crosses (X).
+
+A dataset has already been generated for you using code. The dataset contains simple grayscale images of shapes and is organized into folders:
+
+practice_dataset/
+
+triangle/ → images of triangles
+cross/ → images of crosses
+Each image:
+
+Is grayscale
+Has the same size
+Contains a single shape
+Belongs to one of two classes
+Your task is to train an MLP that learns to classify these images using only their pixel values.
+
+Your Tasks
+
+Load images from the dataset folders (triangle and cross)
+Convert each image into numeric pixel values
+Assign class labels:
+Triangle → 0
+Cross → 1
+Normalize pixel values so that all inputs features are on a similar scale
+Train an MLPClassifier using the image data
+Fill in the entire MLPClassifier initialization except random_state
+Use 32 neurons in the hidden layer
+Use ReLU as the activation function
+Use Adam as the optimizer
+Set the maximum number of training iterations to 2000
+Use the trained model to predict the class of unseen images
+Expected Output
+
