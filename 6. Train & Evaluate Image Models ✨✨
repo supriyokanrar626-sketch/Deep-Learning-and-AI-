@@ -284,7 +284,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 mlp = MLPClassifier(
     hidden_layer_sizes=(32,),
     activation="relu",
-    solver="adam",
+    solver="adam",   ////////// solver here not optimizer
     max_iter=2000,
     random_state=42
 )
