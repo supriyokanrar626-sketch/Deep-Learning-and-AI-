@@ -40,3 +40,6 @@ Even though the MLP only sees numbers, it can still learn:
 In the next section, we will train an MLP on a small image dataset and observe how well it can perform image classification.
 
 #############################33
+
+Image Classification - Short Answer
+What is image classification in the context of neural networks?
