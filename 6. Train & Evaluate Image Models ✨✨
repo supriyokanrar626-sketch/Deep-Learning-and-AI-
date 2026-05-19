@@ -304,3 +304,54 @@ for i in range(min(5, len(X_test))):
     )
 
 ############################3
+
+Evaluating Image Classification Models
+Now that we have trained an MLP to classify images (such as Circle vs Square or Triangle vs Cross), it is important to understand how well the model is performing.
+
+Even if the model makes predictions, we need to answer questions like:
+
+How many predictions are correct?
+Which classes are being confused?
+Are there patterns in the mistakes?
+1. Accuracy: Measures the fraction of predictions that are correct:
+
+Accuracy
+=
+Number of correct predictions
+Total number of predictions
+Accuracy= 
+Total number of predictions
+Number of correct predictions
+​
+ 
+Example:
+
+8 out of 10 images are classified correctly → Accuracy = 0.8 (80%)
+Accuracy gives a quick overall idea, but does not show which class is performing better or worse.
+
+2. Confusion Matrix: A confusion matrix shows how many images of each actual class are predicted as each class.
+
+For a two-class problem (Circle vs Square):
+
+Actual\Predicted	Circle	Square
+Circle	8	2
+Square	1	9
+Correct predictions → cases where the model predicted the right class
+Incorrect predictions → cases where the model predicted the wrong class
+It helps us see patterns in errors and understand the limitations of the model.
+
+3. Precision, Recall, and F1-Score: Beyond accuracy, we can also measure how well the model performs per class:
+
+Precision – Of all images predicted as a class, how many are correct?
+Recall – Of all images actually belonging to a class, how many were correctly predicted?
+F1-score – Combines precision and recall into a single score for easier comparison
+Note Since you already learned these in the ML prerequisite, you can also use them here to check performance per class. They help identify which classes the model predicts well and which class it struggles with.
+
+Example:
+
+Class	Precision	Recall	F1-score
+Circle	0.89	0.80	0.84
+Square	0.82	0.90	0.86
+These metrics highlight strengths and weaknesses per class and give a more detailed understanding than accuracy alone.
+
+Note: Precision, Recall, and F1-score are all classification metrics that help us understand how well the model performs on each class, not just overall performance.
