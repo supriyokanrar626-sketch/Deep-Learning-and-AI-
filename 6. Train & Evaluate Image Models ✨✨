@@ -220,5 +220,16 @@ Use ReLU as the activation function
 Use Adam as the optimizer
 Set the maximum number of training iterations to 2000
 Use the trained model to predict the class of unseen images
-Expected Output
+
+Expected Output :
+Total images loaded: 60
+Each image converted to 784 numbers
+Model training completed.
+Predicted: Triangle | Actual: Triangle
+Predicted: Triangle | Actual: Triangle
+Predicted: Cross | Actual: Cross
+Predicted: Cross | Actual: Cross
+Predicted: Triangle | Actual: Triangle
+
+###############################33333333
 
